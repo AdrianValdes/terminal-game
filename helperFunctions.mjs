@@ -16,7 +16,7 @@ export async function rollingDice() {
   let number = getDiceNumber(20);
   let n = 0;
   console.log(`Rolling...`);
-  while (n < 2) {
+  while (n < 6) {
     await resolveAfterXSeconds(300);
     process.stdout.write(`${getDiceNumber(20)}`);
     await resolveAfterXSeconds(300);
@@ -47,7 +47,7 @@ export async function prepareDiceRollToFightMonster(monster) {
       `Mighty ${character.first_name} from ${character.ville}, you are going to fight the ${monster.type}. Get ready!`
     )
   );
-  await resolveAfterXSeconds(200);
+  await fakeLoading(3);
   console.clear();
   console.log(
     blue(
