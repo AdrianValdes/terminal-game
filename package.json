@@ -1,0 +1,23 @@
+{
+  "name": "TerminalGame",
+  "version": "1.0.0",
+  "description": "A Simple Terminal Game",
+  "main": "index.js",
+  "bin": "bin.js",
+  "scripts": {
+    "start": "nodemon -I --exec babel-node index.js"
+  },
+  "keywords": [],
+  "author": "NotSureYet",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "minimist": "^1.2.5",
+    "single-line-log": "^1.1.2"
+  }
+}
